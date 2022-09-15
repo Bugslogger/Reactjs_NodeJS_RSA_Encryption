@@ -1,0 +1,198 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  padding: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*  */
+.encryption-4096-bit {
+  width: 100%;
+  padding: 5px 10px;
+  display: grid;
+  place-items: center;
+}
+h2 {
+  margin: 0 auto;
+}
+form {
+  display: grid;
+  place-items: center;
+}
+
+input[name="dataEncrypt"] {
+  padding: 10px 5px;
+  width: 400px;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+input[type="submit"],
+.key-Gbtn {
+  width: 180px;
+  padding: 0.8em 0.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.info-text {
+  width: 100%;
+  color: rgba(80, 80, 80, 0.8);
+  font-size: 0.9em;
+}
+
+.commandline {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  margin-top: 20px;
+  /* justify-items: start; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+span {
+  color: rgba(128, 128, 128, 0.9);
+  /* margin: 20px 0; */
+}
+code {
+  width: 100%;
+  font-size: 0.8em;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 20px 15px;
+  margin: 20px 0;
+}
+
+.text-area-for-keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.text-area-label {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+textarea {
+  width: 400px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  margin: 20px 10px;
+}
+
+.show-encypted-data {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  margin: 20px 0 40px 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.error {
+  width: 80%;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+  color: rgba(255, 0, 0, 0.8);
+}
+.success {
+  width: 80%;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+  font-weight: 600;
+  color: rgba(8, 189, 8, 0.8);
+}
+/* header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.links {
+  text-decoration: none;
+  color: purple;
+  border: 1px dashed;
+  padding: 5px 8px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.links1, .links2 {
+  text-decoration: none;
+  color: green;
+  border: 1px dashed;
+  padding: 5px 8px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.links2{
+  display: none;
+}
+
+.key-generate-button {
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+  /* cursor: pointer; */
+}
+
+/* media query */
+@media screen and (max-width: 450px) {
+  input[name="dataEncrypt"],
+  textarea {
+    width: 90%;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.links2{
+  display: block;
+}
+
+.links1{
+  display: none;
+}
+  .links{
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .text-area-for-keys {
+    flex-wrap: wrap;
+  }
+}
